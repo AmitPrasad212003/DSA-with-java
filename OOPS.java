@@ -1,20 +1,20 @@
 public class OOPS{
     public static void main(String args[]){
 
-        Pen p1 = new Pen();
-        p1.setColor("Blue");
-        System.out.println(p1.getColor());
-        p1.setTip(5);
-        System.out.println(p1.getTip());
-        // p1.setColor("yellow");
-        p1.setColor("Yellow");
-        System.out.println(p1.getColor());
+        // Pen p1 = new Pen();
+        // p1.setColor("Blue");
+        // System.out.println(p1.getColor());
+        // p1.setTip(5);
+        // System.out.println(p1.getTip());
+        // // p1.setColor("yellow");
+        // p1.setColor("Yellow");
+        // System.out.println(p1.getColor());
 
 
-        BankAccount myAcc = new BankAccount();
-        myAcc.username = "Kundan";
-        // myAcc.password = "2312#23";
-        myAcc.setPassord("23242@42");
+        // BankAccount myAcc = new BankAccount();
+        // myAcc.username = "Kundan";
+        // // myAcc.password = "2312#23";
+        // myAcc.setPassord("23242@42");
 
 
 
@@ -29,22 +29,22 @@ public class OOPS{
     // Student1 s3 = new Student1(123);
     // Student1 s4 = new Student1("aman",123); not execute no constructor is these type
 
-    Student1 s1 = new Student1();
-    s1.name = "Amit";
-    s1.roll =17342;
-    s1.password = "xyzwd";
-    s1.marks[0] = 100;
-    s1.marks[1] = 90;
-    s1.marks[2] = 80;
+    // Student1 s1 = new Student1();
+    // s1.name = "Amit";
+    // s1.roll =17342;
+    // s1.password = "xyzwd";
+    // s1.marks[0] = 100;
+    // s1.marks[1] = 90;
+    // s1.marks[2] = 80;
 
-    Student1 s2 = new Student1(s1);
-    s2.password = "Adwoed";
+    // Student1 s2 = new Student1(s1);
+    // s2.password = "Adwoed";
 
-    s1.marks[2] = 100;
+    // s1.marks[2] = 100;
 
-    for(int i=0; i<3; i++){
-        System.out.println(s2.marks[i]);
-    }
+    // for(int i=0; i<3; i++){
+    //     System.out.println(s2.marks[i]);
+    // }
 
 // inheritance;
 
@@ -58,14 +58,34 @@ public class OOPS{
 
     // method overloading 
 
-    Calculator calc = new Calculator();
-    System.out.println(calc.sum(1,3));
-    System.out.println(calc.sum((float)1.5,(float)3.4));
-    System.out.println(calc.sum(1,3,6));
+    // Calculator calc = new Calculator();
+    // System.out.println(calc.sum(1,3));
+    // System.out.println(calc.sum((float)1.5,(float)3.4));
+    // System.out.println(calc.sum(1,3,6));
+
+    Deer d = new Deer();
+    d.eat();
+
+    Animal a = new Animal();
+    a.eat();
 
 
     }
 }
+
+// method Overriding;
+class Animal{
+    void eat(){
+        System.out.println("Eats Anything");
+    }
+}
+
+class Deer extends Animal{
+    void eat(){
+        System.out.println("Eats grass");
+    }
+}
+
 
 // Method Overloading 
 
@@ -181,16 +201,16 @@ class Student{
 // inheritance
 
 // Base class
-class Animal{
-    String color;
+// class Animal{
+//     String color;
 
-    void eat(){
-        System.out.println("Eats");
-    }
-    void breathe(){
-        System.out.println("Breathes");
-    }
-}
+//     void eat(){
+//         System.out.println("Eats");
+//     }
+//     void breathe(){
+//         System.out.println("Breathes");
+//     }
+// }
 
 // Derived class // subclass 
 
@@ -215,19 +235,19 @@ class Animal{
 
 // Hierarchial Inheritance
 
-class Mammal extends Animal{
-    void walk(){
-        System.out.println("Walks");
-    }
-}
-class Fish extends Animal{
-    void swim(){
-        System.out.println("swim");
-    }
-}
-class Bird extends Animal{
-    void fly(){
-        System.out.println("fly");
-    }
-}
+// class Mammal extends Animal{
+//     void walk(){
+//         System.out.println("Walks");
+//     }
+// }
+// class Fish extends Animal{
+//     void swim(){
+//         System.out.println("swim");
+//     }
+// }
+// class Bird extends Animal{
+//     void fly(){
+//         System.out.println("fly");
+//     }
+// }
 
