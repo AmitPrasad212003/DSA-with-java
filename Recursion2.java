@@ -61,7 +61,7 @@ public class Recursion2{
     }
 
 
-    // Binary String problem
+    // Binary String problem donot print consecutive 1
     public static void printBinaryString(int n , int lastPlace, String str){
         
         //base case
@@ -76,6 +76,22 @@ public class Recursion2{
         }
 
     }
+     // Binary String problem donot print consecutive 0
+
+    public static void printBinary0String(int n , int lastPlace, String str){
+        
+    //     //base case
+    //     if(n == 0){
+    //         System.out.println(str);
+    //         return;
+    //     }
+    //     //kamm
+    //     printBinaryString(n-1,0, str+"0");
+    //     if(lastPlace == 1){
+    //         printBinaryString(n-1, 1, str+"1");
+    //     }
+
+    // }
     public static void main(String args[]){
         // System.out.println(tilingProblem(3));
 
@@ -84,7 +100,8 @@ public class Recursion2{
 
         // System.out.println(freindPairing(3));
 
-        printBinaryString(2,0,new String(""));
+        // printBinaryString(2,0,new String(""));
+        // printBinary0String(2,0,new String(""));
 
     }
 }
